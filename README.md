@@ -9,8 +9,14 @@ Resources:
 
 ## Setup
     npm install express --save
+    npm install --save-dev nodemon
+    npm install eslint --save-dev
+    ./node_modules/.bin/eslint --init
+
 ## clone repo
     git clone --branch helloworld-express --single-branch https://github.com/pegedi/expressjs
     npm install
 ## Running app
     node app
+or
+    npx nodemon
