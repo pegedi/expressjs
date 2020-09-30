@@ -1,10 +1,10 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/pegedi/expressjs/tree/02-express-generator)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/pegedi/expressjs/tree/03-local-library)
 
-# First sample express-generator
-Standard express-generator sample
+# Local Library with express generator
+MDN express-generator sample
 
 Resources: 
-- https://expressjs.com/en/starter/generator.HTML
+- https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Tutorial_local_library_website
 ## Setup
     npx express-generator --view=pug myapp
     cd myapp
