@@ -1,6 +1,6 @@
 tasks:
   - init: npm install
-    command: node app
+    command: npx nodemon
 
 vscode:
   extensions:

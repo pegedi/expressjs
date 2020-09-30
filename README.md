@@ -17,6 +17,5 @@ Resources:
     git clone --branch helloworld-express --single-branch https://github.com/pegedi/expressjs
     npm install
 ## Running app
-    node app
-or
-    npx nodemon
+  - use `node app` - start node without and serves the helloworld  
+  - or `npx nodemon` - restarts node server
