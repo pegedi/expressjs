@@ -9,6 +9,30 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+//Set up mongoose connection
+//Import the mongoose module
+require('dotenv').config();
+
+var mongoose = require('mongoose');
+
+//Set up default mongoose connection
+//var dev_db_url = 'mongodb+srv://@cluster0-mbdj7.mongodb.net/local_library?retryWrites=true'
+var dev_db_url = "mongodb+srv://<username>:<password>@cluster0.0zrog.azure.mongodb.net/<dbname>?retryWrites=true&w=majority";
+var mongoDB = process.env.MONGODB_URI || dev_db_url;
+console.log(mongoDB);
+//mongoose.connect(mongoDB, { useNewUrlParser: true });
+
+//Get the default connection
+mongoose.Promise = global.Promise;
+var db = mongoose.connection;
+//Tip: If you need to create additional connections you can use mongoose.createConnection().
+//This takes the same form of database URI (with host, database, port, options etc.) as connect()
+//and returns a Connection object).
+//Bind connection to error event (to get notification of connection errors)
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
