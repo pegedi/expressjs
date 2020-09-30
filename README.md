@@ -10,9 +10,11 @@ Resources:
     npx express-generator --view=pug myapp
     cd myapp
     npm install
+    npm install dotenv --save
     npm install --save-dev nodemon
     npm install eslint --save-dev
     ./node_modules/.bin/eslint --init
+    npm install mongoose
 
 ## clone repo
     git clone --branch 02-express-generator --single-branch https://github.com/pegedi/expressjs
