@@ -5,6 +5,7 @@ MDN express-generator sample
 
 Resources: 
 - https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Tutorial_local_library_website
+- github: https://github.com/mdn/express-locallibrary-tutorial
 ## Setup
     npx express-generator --view=pug myapp
     cd myapp
