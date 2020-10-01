@@ -15,11 +15,17 @@ Resources:
     npm install eslint --save-dev
     ./node_modules/.bin/eslint --init
     npm install mongoose
+    npm install async
 
 ## clone repo
     git clone --branch 02-express-generator --single-branch https://github.com/pegedi/expressjs
     cd myapp && npm install
-    
+## checking actual ip address
+To put on whitelist at mongodb.com atlas service:
+    curl http://ifconfig.me/ip
+More details: https://stackabuse.com/how-to-get-your-ip-address-on-linux/
+
+
 ## Running app
   - use `DEBUG=myapp:* npm start` - start node without restarting the server and serves  
   - or `DEBUG=myapp:* npx nodemon` - restarts node server when source file changes
