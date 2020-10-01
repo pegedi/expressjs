@@ -23,19 +23,46 @@ button {
   margin: 3px 0 0 0;
   padding: 10px;
 }
+button#toggle-password {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 300px;
+    padding: 0;
+    position: absolute;
+    top: -4px;
+    right: 0px;
+}
 
 button:hover {
   background-color: #ccc;
   color: black;
 }
 
+button#sign-in {
+  margin: 0px 0 0 0;
+}
+
+button#sign-in:disabled {
+    color:lightslategrey;
+    background-color: #15b315;
+}
+
 form {
   margin: 0 auto;
   max-width: 500px;
 }
-div {
-    width: 400px;
-    
+p {
+    max-width: 400px;
+    line-height: 1.5rem;
+    padding: 15px;
+    margin: 0 0 30px 0;
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+}
+div#password-constraints {
+  margin: 5px 0 0 0;
+  font-size: 16px;
 }
 h1 {
   border-bottom: 1px solid #ccc;

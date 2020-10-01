@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
 </head>
 <body>
      
     <h1 id="head1">Sign-in best practices</h1>
-    <div>
+    <p>
         This codelab shows you how to build a sign-in form that is secure, accessible, and easy to use.
         <br>
         <a href="https://web.dev/codelab-sign-in-form-best-practices/">Sign-in form best practices codelab<a>
-    </div>
+    </p>
     
     <form action="#" method="post">
         <h1>Sign in</h1>
@@ -23,9 +25,11 @@
         </section>
         <section>
             <label for="password">Passwoard</label>
-            <input id="password" name="password" type="password" autocomplete="current-password">
+            <button id="toggle-password" type="button" aria-label="Show password as plain text. Warning: this will display your password on the screen.">Show password</button>
+            <input id="password" name="password" type="password" autocomplete="current-password" aria-describedby="password-constraints" required>
+            <div id="password-constraints">At least eight characters, with at least one lowercase and one uppercase letter.</div>
         </section>
-        <button>Sign in</button>
+        <button id="sign-in">Sign in</button>
     </form>
 </body>
 </html>
