@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Hello World :)</h1>
+    <p> 
+        <h1>Sign-in best practices</h1>
+        <p>
+            This codelab shows you how to build a sign-in form that is secure, accessible, and easy to use.
+            <br>
+            <a href="https://web.dev/codelab-sign-in-form-best-practices/">Sign-in form best practices codelab<a>
+        <p>
+    <p>
+    <form action="#" method="post">
+        <h1>Sign in</h1>
+        <section>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="username" autofocus required>
+        </section>
+        <section>
+            <label for="password">Passwoard</label>
+            <input id="password" name="password" type="password" autocomplete="current-password">
+        </section>
+        <button>Sign in</button>
+    </form>
 </body>
 </html>
