@@ -33,7 +33,10 @@ form {
   margin: 0 auto;
   max-width: 500px;
 }
-
+div {
+    width: 400px;
+    
+}
 h1 {
   border-bottom: 1px solid #ccc;
   font-size: 28px;
@@ -83,6 +86,9 @@ form section {
     font-size: calc(2 * var(--desktop-font-size));
     font-weight: 500;
     margin: 0 0 80px 0;
+  }
+   h1#head1 {
+    margin: 0 0 10px 0;
   }
   input {
     font-size: 14px; /* fallback */
