@@ -20,7 +20,7 @@ var mongoose = require('mongoose');
 var dev_db_url = "mongodb+srv://<username>:<password>@cluster0.0zrog.azure.mongodb.net/<dbname>?retryWrites=true&w=majority";
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 console.log(mongoDB);
-//mongoose.connect(mongoDB, { useNewUrlParser: true });
+mongoose.connect(mongoDB, { useNewUrlParser: true });
 
 //Get the default connection
 mongoose.Promise = global.Promise;
